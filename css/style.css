@@ -1,0 +1,299 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+}
+.log-rig{
+    display: flex; flex-wrap: wrap; 
+}
+
+.parent_shopping_cart{
+    display: none ;
+    display: flex;
+    width: 43%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+.parent_shopping_cart li a:hover{
+    opacity: 0.5;
+}
+.greeting_name{
+    font-size: 1.15rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: cursive;
+    /* transform: translateY(0.1rem); */
+}
+.header h5 a {
+    text-decoration: none;
+    color: rgb(51, 255, 0);
+    padding: 0px 0.5rem !important;
+}
+.header h5 a:hover{
+    opacity: 0.8;
+}
+
+.log-rig li a {
+
+    padding: 0px 0.75rem;
+    color: rgb(255, 200, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.log-rig li a:hover{
+    opacity: 0.7;
+}
+/* //////////////////////////////// */
+.home-page-form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.custom-select{
+    width: 45%;
+}
+.home-page-search{
+    width: 45%;
+}
+.home-page-search::placeholder{
+   color: rgba(0, 0, 0, 0.726);
+}
+.products{
+    margin: 0.5rem 0rem;
+}
+.hover-effect{
+    transition: 0.3s;
+    box-shadow: 1px 1px 7px 5px #00000080;
+}
+.hover-effect:hover{
+    transform: translateY(-5px);
+}
+.heart{
+     display: block;
+     position: relative;
+     z-index: 2;
+     color: rgb(0, 0, 0);
+     transform: translateX(1.5rem);
+     cursor: pointer;
+}
+
+/* ////////////////////////////// */
+/* Login form */
+
+.login-form{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(199, 194, 194, 0.868);
+    padding: 0.5rem 0.75rem;
+    transform: translateY(3rem);
+}
+.reg-link{
+    color: rgb(0, 0, 255); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    font-weight: 700;
+}
+.reg-link:hover{
+    text-decoration: none;
+}
+.images-products{
+    background-position: -4.5rem -3.3rem;
+    background-size: cover;
+    height: 24rem;
+    /* background-repeat: round; */
+    /* background-repeat :no-repeat ; */
+    position: relative;
+    z-index: 3;
+}
+.bg-problem{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* background: linear-gradient(90deg, #4242427d, transparent); */
+}
+.pic1{
+    background-image: url(../images/Gta.png);
+}
+.pic2{
+    background-image: url(../images/spiderman.png)
+}
+.pic3{
+    background-image: url(../images/under\ city.png)
+}
+.pic4{
+    background-image: url(../images/fifa2024.png)
+}
+.pic5{
+    background-image: url(../images/reddead.png);
+}
+.pic6{
+    background-image: url(../images/the\ last\ of\ us.png);
+}
+.pic7 {
+    background-image: url(../images/just\ cause.png)
+}
+.pic8{
+    background-image: url(../images/pubg.png);
+}
+.pic9{
+    background-image: url(../images/uncharted\ 2.png);
+}
+.bg-problem::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    background: linear-gradient(268deg, rgba(0, 123, 255, 0.5), transparent);
+    opacity: 0;
+    transition: .5s;  
+}
+.bg-problem:hover::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.bg-problem::before{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:0;
+    height: 0;
+    content: "";
+    background: linear-gradient(106deg, #00000096, transparent);
+    opacity: 0;
+    transition: .5s;  
+}
+.bg-problem:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+
+.shopping_cart i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.shopping_cart{
+    margin: 0;
+    margin-right: 2rem;
+    position: relative;
+}
+.shopping_cart .badge{
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    font-size: 13px;
+}
+aside{
+    position: relative;
+    height: 100%;
+    display: none;
+}
+aside .cart_products{
+    position: fixed;
+    min-width: fit-content;
+    top: 0px;
+    right: 0px;
+    height: 580px;
+    background-color: rgb(51, 49, 49);
+    z-index: 100;
+    width: 16%;
+    border: 1px solid gray;
+    padding: 1rem;
+   transition: transform 0.3s ease; 
+}
+.out{
+    text-decoration: none !important; 
+}
+.aside-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+}
+.quantity{
+    margin: 0 10px; color: white;
+}
+.parent-quantity-info{
+    display: flex;
+    align-items: baseline;
+    width: 56.36%;
+}
+.parent-quantity-info i{
+    cursor: pointer;
+    font-size: 16px;
+}
+.parent-quantity-info .fa-minus{
+    color: red;
+}
+.parent-quantity-info .fa-plus{
+    color: rgb(81, 195, 81);
+}
+.aside-info{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.dragged-items{
+    margin-right: 19.46px; color: white;
+    width: -webkit-fill-available;
+}
+.View-Products{
+    display: block;
+    position: absolute;
+    left: 17.5%;
+    /* background-color: blue; */
+    z-index: 40000;
+    top: 33rem;
+    text-decoration: none;
+    color: white;
+}
+.View-Products:hover{
+    text-decoration: none; color: rgb(242, 255, 0);
+}
+.Subtotal {
+    display: block;
+    position: absolute;
+    left: 7%;
+    /* background-color: blue; */
+    z-index: 40000;
+    top: 28.5rem;
+    text-decoration: none;
+    color: white;
+}
+.home-page-search:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+#Select:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+#Trash{
+    cursor: pointer;
+    margin: 0px 1rem;
+    color: rgb(140, 133, 133);
+    font-size: 20px;
+    
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/home page.css">
+</head>
+<body style="background: linear-gradient(137deg, #1a1c8e, transparent);">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7294d099;">
+        <div class="header-info" style="display: flex; width: 57%; height: 40px; justify-content: space-between;">
+          <a class="navbar-brand" href="#">Online Shopping</a>
+          <h5 class="greeting_name" style="align-self: center; margin: 0;"></h5>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
+          <ul class="navbar-nav log-rig">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Registeration.html">Register</a>
+            </li>
+          </ul> <!-- log-rig -->
+
+          <ul class="parent_shopping_cart">
+            <li class="shopping_cart">
+              <i class="fas fa-cart-plus icon-cart"></i> 
+              <span class="badge">0</span> <!-- the sign of increasing in the shopping cart -->
+              <li><a href="" class="out" style=" color: rgb(0, 0, 0);">Log out</a></li>
+          </ul>
+          
+      </nav>
+    
+    </header>
+    <aside id="aside">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    
+          <div class="cart_products">
+            <div class="aside-content" id="aside-content">
+              
+            </div> <!-- aside content -->
+            <a href="cartsproducts.html" class="View-Products">View All Products</a>
+            <div class="Subtotal">Subtotal ( items) : $</div>
+          </div>
+          
+    
+        </div>
+    
+      </div>
+    
+    </aside>
+    <br>
+    
+    <br>
+    <br>
+    <section>
+        <form class="home-page-form">
+            <select id="Select" name="cars" class="custom-select">
+              <option selected hidden>Searched by Name</option>
+              <option id="s-Name" value="name">Searched by Name</option>
+              <option id="s-Category" value="category">Searched by Category</option>
+            </select>
+            <input type="text" class="form-control home-page-search" placeholder="Search" id="name-search">
+          </form>
+    </section>
+    <br>
+
+    <main>
+      <div class="container products-container">
+        <div class="row products_row">
+          
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </main> 
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="JS/common-variables.js"></script>
+    <script src="JS/home page.js" ></script>
+    
+    
+</body>
+</html>
+
+
+  

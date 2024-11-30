@@ -1,0 +1,126 @@
+*{
+    list-style: none;
+}
+.shopping_cart i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.shopping_cart{
+    margin: 0;
+    margin-right: 2rem;
+    position: relative;
+}
+.shopping_cart .badge{
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    font-size: 13px;
+}
+aside{
+    position: relative;
+    height: 100%;
+    display: none;
+}
+aside .cart_products{
+    position: fixed;
+    min-width: fit-content;
+    top: 0px;
+    right: 0px;
+    height: 580px;
+    background-color: rgb(51, 49, 49);
+    z-index: 100;
+    width: 16%;
+    border: 1px solid gray;
+    padding: 1rem;
+   transition: transform 0.3s ease; 
+}
+.out{
+    text-decoration: none !important; 
+}
+.aside-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+}
+.quantity{
+    margin: 0 10px; color: white;
+}
+.parent-quantity-info{
+    display: flex;
+    align-items: baseline;
+    width: 56.36%;
+}
+.parent-quantity-info i{
+    cursor: pointer;
+    font-size: 16px;
+}
+.parent-quantity-info .fa-minus{
+    color: red;
+}
+.parent-quantity-info .fa-plus{
+    color: rgb(81, 195, 81);
+}
+.aside-info{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.dragged-items{
+    margin-right: 19.46px; color: white;
+    width: -webkit-fill-available;
+}
+.View-Products{
+    display: block;
+    position: absolute;
+    left: 17.5%;
+    /* background-color: blue; */
+    z-index: 40000;
+    top: 33rem;
+    text-decoration: none;
+    color: white;
+}
+.View-Products:hover{
+    text-decoration: none; color: rgb(242, 255, 0);
+}
+.Subtotal {
+    display: block;
+    position: absolute;
+    left: 7%;
+    /* background-color: blue; */
+    z-index: 40000;
+    top: 28.5rem;
+    text-decoration: none;
+    color: white;
+}
+.home-page-search:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+#Select:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+#Trash{
+    cursor: pointer;
+    margin: 0px 1rem;
+    color: rgb(140, 133, 133);
+    font-size: 20px;
+    
+}
+
+.fa-heart {
+    color: rgb(140, 136, 136); /* اللون الافتراضي */
+    cursor: pointer;
+}
+
+.fa-heart.active {
+    color: red; /* اللون لما يكون مضاف للمفضلة */
+}
